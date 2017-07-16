@@ -14,7 +14,7 @@
     <li class="dropdown menu-user-widget-signin">
         <a class="dropdown-toggle menu-user-widget-signin-switch" href="#" data-toggle="dropdown">{{ _('sign_in', 'rainlab.user::lang.account') }} &nbsp; <i class="icon-off"></i></a>
         <div class="dropdown-menu" style="padding: 17px">
-            <form class="menu-user-widget-sigin-form" data-request="onSignin">
+            <form class="menu-user-widget-sigin-form" data-request="{{ __SELF__ }}::onSignin">
                 <div class="form-group menu-user-widget-signin-login">
                     <input name="login" type="text" placeholder="{{ loginAttributeLabel }}">
                 </div>
